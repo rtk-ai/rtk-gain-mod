@@ -1,0 +1,6 @@
+{
+  "name": "rtk-gain",
+  "version": "0.5.0",
+  "description": "RTK's token savings, live in Claude Code: animated bars for command savings and the context breakdown, with rtk proxy support",
+  "author": { "name": "RTK AI" }
+}

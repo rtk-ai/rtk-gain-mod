@@ -1,0 +1,4 @@
+{
+  "description": "The rtk-gain hooks module",
+  "modules": ["./register.js"]
+}

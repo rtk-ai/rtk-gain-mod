@@ -1,0 +1,14 @@
+{
+  "name": "rtk",
+  "description": "Claude Code plugins for RTK (Rust Token Killer)",
+  "owner": {
+    "name": "RTK AI"
+  },
+  "plugins": [
+    {
+      "name": "rtk-gain",
+      "source": "./",
+      "description": "RTK's token savings, live in Claude Code: animated bars, the context breakdown, and a viking who breaks the tokens"
+    }
+  ]
+}
