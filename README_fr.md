@@ -56,21 +56,31 @@ Toutes prises dans une vraie session Claude Code 2.1.290, sur un clone du dépô
 
 Il faut Claude Code 2.1.287 ou plus, `rtk` dans le `PATH`, et le hook RTK installé (`rtk init -g`) : sans le hook, aucune commande ne passe par RTK, et le panneau le dit.
 
-Depuis le catalogue de ce dépôt :
+1. Installer le mod depuis le catalogue de ce dépôt :
 
-```text
-/plugin marketplace add rtk-ai/rtk-gain-mod
-/plugin install rtk-gain@rtk
-```
+   ```text
+   /plugin marketplace add rtk-ai/rtk-gain-mod
+   /plugin install rtk-gain@rtk
+   ```
 
-Ou pour une session, sans installer :
+   Ou, pour une session seulement, sans installer :
 
-```bash
-git clone https://github.com/rtk-ai/rtk-gain-mod.git
-claude --plugin-dir ./rtk-gain-mod
-```
+   ```bash
+   git clone https://github.com/rtk-ai/rtk-gain-mod.git
+   claude --plugin-dir ./rtk-gain-mod
+   ```
 
-Puis, dans la session, lancer `/rtk-gain` et demander quelques commandes à Claude (`git log`, `git diff`, `cargo test`). `/plugin` affiche `1 mod active · rtk-gain` quand le mod est chargé.
+   `/plugin` affiche `1 mod active · rtk-gain` quand le mod est chargé. Le bandeau au-dessus du prompt et l'économie dans le spinner apparaissent tout de suite.
+
+2. Ouvrir le panneau, avec le viking et les deux barres :
+
+   ```text
+   /rtk-gain
+   ```
+
+   Il ne s'ouvre pas tout seul : sans cette étape, on ne voit que le bandeau. `/rtk-gain` à nouveau, ou Échap, le ferme.
+
+3. Demander quelques commandes à Claude (`git log`, `git diff`, `cargo test`) et regarder le viking frapper chacune.
 
 Un mod est du code qui tourne avec vos droits. Celui-ci lit `rtk gain`, les chiffres de contexte de Claude Code et, quand elle existe, la base du proxy RTK ; `claude plugin validate` liste chacun de ses appels avant l'installation.
 

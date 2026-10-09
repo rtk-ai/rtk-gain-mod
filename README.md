@@ -56,21 +56,31 @@ All taken in a real Claude Code 2.1.290 session, on a clone of the `rtk` reposit
 
 You need Claude Code 2.1.287 or later, `rtk` in your `PATH`, and the RTK hook installed (`rtk init -g`): without the hook no command goes through RTK, and the pane says so.
 
-From the marketplace in this repository:
+1. Install the mod from the marketplace in this repository:
 
-```text
-/plugin marketplace add rtk-ai/rtk-gain-mod
-/plugin install rtk-gain@rtk
-```
+   ```text
+   /plugin marketplace add rtk-ai/rtk-gain-mod
+   /plugin install rtk-gain@rtk
+   ```
 
-Or for one session, without installing:
+   Or, for one session only, without installing:
 
-```bash
-git clone https://github.com/rtk-ai/rtk-gain-mod.git
-claude --plugin-dir ./rtk-gain-mod
-```
+   ```bash
+   git clone https://github.com/rtk-ai/rtk-gain-mod.git
+   claude --plugin-dir ./rtk-gain-mod
+   ```
 
-Then, in the session, run `/rtk-gain` and ask Claude for a few commands (`git log`, `git diff`, `cargo test`). `/plugin` shows `1 mod active · rtk-gain` when the mod is loaded.
+   `/plugin` shows `1 mod active · rtk-gain` when the mod is loaded. Right away you get the band above the prompt and the saving in the spinner.
+
+2. Open the pane, with the viking and both bars:
+
+   ```text
+   /rtk-gain
+   ```
+
+   It does not open on its own: without this step you only see the band. `/rtk-gain` again, or Esc, closes it.
+
+3. Ask Claude for a few commands (`git log`, `git diff`, `cargo test`) and watch the viking strike each one.
 
 A mod is code that runs with your permissions. This one reads `rtk gain`, Claude Code's own context figures and, when present, the RTK proxy's database; `claude plugin validate` lists every call it makes before you install it.
 
