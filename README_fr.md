@@ -8,7 +8,20 @@ Un mod Claude Code qui montre, pendant que Claude travaille, ce que [RTK](https:
 
 Testé avec Claude Code 2.1.290 dans le terminal. Les mods demandent Claude Code 2.1.287 ou plus dans le terminal, 2.1.286 dans l'app Desktop.
 
+## Démarrage rapide
+
+Avec `rtk` et son hook installés (`rtk init -g`), dans Claude Code :
+
+```text
+/plugin marketplace add rtk-ai/rtk-gain-mod
+/plugin install rtk-gain@rtk
+/rtk-gain
+```
+
+La dernière commande ouvre le panneau avec le viking ; il ne s'ouvre pas tout seul. Détails et autres façons d'installer dans [Installer](#installer).
+
 ## Ce que montre le mod
+
 
 Trois endroits de Claude Code :
 

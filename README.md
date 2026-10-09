@@ -8,7 +8,20 @@ A Claude Code mod that shows what [RTK](https://github.com/rtk-ai/rtk) saves whi
 
 Tested with Claude Code 2.1.290 in the terminal. Mods need Claude Code 2.1.287 or later in the terminal, 2.1.286 in the Desktop app.
 
+## Quick start
+
+With `rtk` and its hook installed (`rtk init -g`), in Claude Code:
+
+```text
+/plugin marketplace add rtk-ai/rtk-gain-mod
+/plugin install rtk-gain@rtk
+/rtk-gain
+```
+
+The last command opens the pane with the viking; it does not open on its own. Details and other ways to install in [Install](#install).
+
 ## What you see
+
 
 Three places in Claude Code:
 
