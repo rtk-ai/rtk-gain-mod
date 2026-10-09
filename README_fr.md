@@ -22,7 +22,6 @@ La dernière commande ouvre le panneau avec le viking ; il ne s'ouvre pas tout s
 
 ## Ce que montre le mod
 
-
 Trois endroits de Claude Code :
 
 - **Le panneau**, ouvert avec `/rtk-gain` : le viking, les deux barres avec leurs légendes, et les dernières commandes avec leur gain propre. `/rtk-gain` une seconde fois, ou Échap, le ferme.

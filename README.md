@@ -22,7 +22,6 @@ The last command opens the pane with the viking; it does not open on its own. De
 
 ## What you see
 
-
 Three places in Claude Code:
 
 - **The pane**, opened with `/rtk-gain`: the viking, both bars with their legends, and the last commands with each one's own saving. `/rtk-gain` again, or Esc, closes it.
